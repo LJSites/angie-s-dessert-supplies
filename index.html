@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- ARCHETYPE: sweet supply emporium — warm cream + raspberry + mint, abundant and friendly. Display serif over clean sans. -->
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Angie's Dessert Supplies — Cake & Candy Supplies, Inglewood</title>
+<meta name="description" content="Cake, candy, and dessert decorating supplies in Inglewood — edible printing, molds, and everything you need, at a price that works.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fdf3ec;--cream2:#f6e3d6;--ink:#3b211c;--ink2:#6d4a40;--rasp:#c83a5b;--rasp2:#a32a47;--mint:#3f9b7d;--gold:#e0a04a;--line:#ecd3c4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+.serif{font-family:Fraunces,Georgia,serif}
+a{color:var(--rasp2);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1100px;margin:0 auto;padding:0 26px}
+header{padding:18px 0;border-bottom:2px solid var(--ink);position:sticky;top:0;background:var(--cream);z-index:20}
+header .row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-family:Fraunces,serif;font-weight:800;font-size:24px;color:var(--rasp2);letter-spacing:-.01em}
+nav a{margin-left:22px;color:var(--ink2);font-weight:500;font-size:14px}nav a:hover{color:var(--rasp2)}
+.pill{display:inline-flex;gap:8px;align-items:center;background:var(--rasp);color:#fff;padding:9px 18px;border-radius:999px;font-weight:600;font-size:14px}
+.pill:hover{background:var(--rasp2);text-decoration:none}
+.hero{padding:70px 0 56px;position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.tag{display:inline-block;background:var(--mint);color:#fff;padding:5px 14px;border-radius:999px;font-weight:600;font-size:12.5px;letter-spacing:.04em;margin-bottom:18px}
+h1{font-family:Fraunces,serif;font-weight:800;font-size:clamp(40px,6vw,68px);line-height:1.02;letter-spacing:-.025em;margin-bottom:18px}
+h1 em{color:var(--rasp);font-style:italic}
+.lede{font-size:18px;color:var(--ink2);max-width:480px;margin-bottom:28px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:14px;border:2px solid var(--ink);color:var(--ink);background:transparent}
+.btn:hover{background:var(--ink);color:var(--cream);text-decoration:none}
+.btn.solid{background:var(--rasp);border-color:var(--rasp);color:#fff}.btn.solid:hover{background:var(--rasp2);border-color:var(--rasp2)}
+.hero-img{aspect-ratio:4/5;border-radius:18px;border:3px solid var(--ink);object-fit:cover;width:100%;transform:rotate(2deg)}
+.section{padding:60px 0;border-top:2px solid var(--ink)}
+.kick{font-family:Fraunces,serif;font-style:italic;color:var(--rasp);font-size:22px;margin-bottom:8px}
+h2{font-family:Fraunces,serif;font-weight:700;font-size:36px;letter-spacing:-.02em;margin-bottom:26px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:22px}
+.card h3{font-family:Fraunces,serif;font-size:20px;color:var(--rasp2);margin-bottom:6px}
+.card p{font-size:14px;color:var(--ink2)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:2px solid var(--ink)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.q{background:var(--cream2);border:2px solid var(--ink);border-radius:14px;padding:22px}
+.q p{font-family:Fraunces,serif;font-size:16px;line-height:1.5;margin-bottom:12px}
+.q .who{font-weight:600;font-size:13px;color:var(--rasp2)}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--ink);border-radius:16px;overflow:hidden}
+.visit .info{padding:30px 32px}
+.visit .row{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.visit .row:last-child{border-bottom:0}.visit .k{font-weight:600;color:var(--rasp2)}
+.visit iframe{width:100%;height:100%;min-height:340px;border:0;border-left:2px solid var(--ink)}
+footer{background:var(--ink);color:var(--cream2);padding:34px 0 48px}
+footer .credit{margin-top:10px;font-size:13px;opacity:.8}footer a{color:var(--gold)}
+@media(max-width:780px){.hero .grid,.visit{grid-template-columns:1fr}.cards,.gallery,.quotes{grid-template-columns:1fr 1fr}nav{display:none}.visit iframe{border-left:0;border-top:2px solid var(--ink)}}
+@media(max-width:480px){.cards,.gallery,.quotes{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="wrap row">
+  <div class="brand">Angie's Dessert Supplies</div>
+  <div><nav><a href="#shop">Shop</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav>
+  <a class="pill" href="tel:+13107518230" style="margin-left:22px">Call (310) 751-8230</a></div>
+</div></header>
+
+<section class="hero"><div class="wrap grid">
+  <div>
+    <span class="tag">Inglewood · cake, candy & dessert supplies</span>
+    <h1>Everything for the <em>sweet</em> part.</h1>
+    <p class="lede">Cake, candy, and dessert decorating supplies — edible printing, jelly molds floor to ceiling, and the little tools that make the difference. If you're making something sweet, odds are we have it.</p>
+    <div class="cta-row"><a class="btn solid" href="tel:+13107518230">Call the shop</a><a class="btn" href="#visit">Get directions</a></div>
+  </div>
+  <img class="hero-img" src="https://lh3.googleusercontent.com/places/ANXAkqGcNlqKexgQnluPAG55-mKMwtXkunLG64kA8c3RVkxOSQY9XmkAbWwioNevLd-q04D675_Y73Ye6wA0mO3QAnnKfwZ-aOVz1VA=s4800-w1284" alt="Inside Angie's Dessert Supplies">
+</div></section>
+
+<section class="section" id="shop"><div class="wrap">
+  <div class="kick">What you'll find</div>
+  <h2>Aisles of it.</h2>
+  <div class="cards">
+    <div class="card"><h3>Edible printing</h3><p>Custom edible images, ready in about an hour. Bring your design, walk out with the topper.</p></div>
+    <div class="card"><h3>Molds &amp; pans</h3><p>Jelly molds in every shape imaginable, plus cake pans, candy molds, and chocolate forms.</p></div>
+    <div class="card"><h3>Decorating supplies</h3><p>Colors, sprinkles, fondant, boxes, boards, bags — the finishing touches at a fair price.</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="gallery"><div class="wrap">
+  <div class="kick">The shop</div>
+  <h2>Come see the variety.</h2>
+  <div class="gallery">
+    <img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPQkOcViT0xYKijlMvRNc4NMtoswooZyuFBr8D_jFA5lNLmbxn226-2BJld82Wp2_AHy4-fDIZdDMOiTJlIT8zJoddSg33sKRkFCZ_TKWC5T-AnM4-1R5jLCuMtK75uQMVkyR_k8bVy5V0iUA=s4800-w1600" alt="Supplies" loading="lazy">
+    <img src="https://lh3.googleusercontent.com/places/ANXAkqEJ-2a5PhtLXmn5TW1a5AT1jvltFouKEnG0h6c-JlXIrTbkipBtojKBA3jaQ43JjVR1xZ0xaSwhzWH-fNx-YFQhLgiAurZFrk8=s4800-w1600" alt="Shelves" loading="lazy">
+    <img src="https://lh3.googleusercontent.com/places/ANXAkqG09UBJdctrwEFFd7LuExwhTER_7DOPOcZguC05gDqBhkMFGWuQrKd1Zd4zDsPenog-A5FNzx5ETp07hLtCHYhPGnn5toB36xE=s4800-w1283" alt="Molds" loading="lazy">
+    <img src="https://lh3.googleusercontent.com/places/ANXAkqEQfsfh8E2HEfoeIQBIocm9_eGc_uF_XDDGctQt0taRG_6i3U4GwTLhj9O71_tAPJwV5JIoKkrNIUav_emj4At53oF5aKIvqVo=s4800-w1284" alt="Candy supplies" loading="lazy">
+    <img src="https://lh3.googleusercontent.com/places/ANXAkqFNX3I0VNX7Dg46SW1RVbZIlgoRrnrdhhGDQOMm_2iGYiA2pTY79xUtPDjsUKjhrqXqhD8AC5a7kPHCUvH7ZVv9S781QxrPn-U=s4800-w1600" alt="Decorating tools" loading="lazy">
+    <img src="https://lh3.googleusercontent.com/places/ANXAkqGcNlqKexgQnluPAG55-mKMwtXkunLG64kA8c3RVkxOSQY9XmkAbWwioNevLd-q04D675_Y73Ye6wA0mO3QAnnKfwZ-aOVz1VA=s4800-w1284" alt="Storefront" loading="lazy">
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="kick">In their words</div>
+  <h2>Bakers keep coming back.</h2>
+  <div class="quotes">
+    <div class="q"><p>"Such a life saver when it comes to edible printing. Had it ready within an hour. Thank you very much!"</p><div class="who">— Enn</div></div>
+    <div class="q"><p>"The jelly molds take up an entire room, floor to ceiling. Prepare to be overwhelmed by the variety Angie's offers."</p><div class="who">— Anne R.</div></div>
+    <div class="q"><p>"Small place but the people are nice. You find everything you need here, at an affordable price."</p><div class="who">— Arely G.</div></div>
+  </div>
+</div></section>
+
+<section class="section" id="visit"><div class="wrap">
+  <div class="kick">Find us</div>
+  <h2>Stop by.</h2>
+  <div class="visit">
+    <div class="info">
+      <div class="row"><span class="k">Address</span><span>4443 Lennox Blvd, Inglewood, CA 90304</span></div>
+      <div class="row"><span class="k">Phone</span><span><a href="tel:+13107518230">(310) 751-8230</a></span></div>
+      <div class="row"><span class="k">Mon–Thu</span><span>9:00 AM – 6:00 PM</span></div>
+      <div class="row"><span class="k">Friday</span><span>9:00 AM – 7:00 PM</span></div>
+      <div class="row"><span class="k">Saturday</span><span>9:00 AM – 4:00 PM</span></div>
+      <div class="row"><span class="k">Sunday</span><span>Closed</span></div>
+      <div style="margin-top:20px"><a class="btn solid" href="tel:+13107518230">Call (310) 751-8230</a></div>
+    </div>
+    <iframe loading="lazy" src="https://www.google.com/maps?q=4443+Lennox+Blvd+Inglewood+CA+90304&output=embed"></iframe>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <strong class="serif" style="font-size:18px;color:#fff">Angie's Dessert Supplies</strong> · Inglewood, CA
+  <div class="credit">Mockup designed by LJ Sites — interested in making this yours? <a href="mailto:LJsites.llc@gmail.com">LJsites.llc@gmail.com</a></div>
+</div></footer>
+</body></html>
