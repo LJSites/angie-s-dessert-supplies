@@ -1,107 +1,265 @@
-<!doctype html>
-<!-- bakery · modern-bright · hero-layout 0 · svc-layout 0 · generated from live Google Places data for Angie&#x27;s Dessert Supplies -->
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Angie&#x27;s Dessert Supplies — Store, Inglewood</title>
-<meta name="description" content="Angie&#x27;s Dessert Supplies — Store in Inglewood.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<!-- bakery · supply-boutique · hero-layout 3 · svc-layout 3 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Angie's Dessert Supplies — Inglewood Cake Pros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf7f4;--surface:#fff;--ink:#1a1a1a;--mut:#6e6e6c;--acc:#cf5340;--line:#e6dfdc}
+:root{
+  --bg:#fff8fb;
+  --pink:#f5b5c8;
+  --pink-dk:#d97a92;
+  --blue:#b8d4e8;
+  --mint:#a8d8c8;
+  --ink:#2d2438;
+  --mute:#7a7088;
+  --line:#f0e0e8;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
-.disp{font-family:'Epilogue',sans-serif}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-img{max-width:100%;display:block}
-.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
-header{padding:16px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:30}
-header .row{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:'Epilogue',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;color:var(--ink)}
-nav a{margin-left:20px;color:var(--mut);font-size:13.5px;font-weight:500}nav a:hover{color:var(--acc);text-decoration:none}
-.callbtn{display:inline-flex;align-items:center;gap:7px;background:var(--acc);color:#fff;padding:9px 16px;border-radius:8px;font-weight:600;font-size:13.5px;margin-left:20px}
-.callbtn:hover{filter:brightness(.92);text-decoration:none;color:#fff}
-.hero{padding:72px 0 60px}
-.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
-.kicker{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:18px}
-h1{font-family:'Epilogue',sans-serif;font-weight:800;font-size:clamp(40px,6.2vw,72px);line-height:1.02;letter-spacing:-.025em;margin-bottom:20px}
-.lede{font-size:18px;color:var(--mut);max-width:480px;margin-bottom:28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;font-weight:600;font-size:14px;border:1.5px solid var(--ink);color:var(--ink);background:transparent}
-.btn:hover{background:var(--ink);color:var(--bg);text-decoration:none}
-.btn.solid{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.solid:hover{filter:brightness(.92);color:#fff}
-.hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;;}
-.section{padding:62px 0;border-top:1px solid var(--line)}
-.kick{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
-h2{font-family:'Epilogue',sans-serif;font-weight:700;font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
+html,body{background:var(--bg);color:var(--ink);font-family:'Manrope',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.q{font-family:'Quicksand',sans-serif}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
 
-.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-.svcs .svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
-.svc-rows{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
-.svc-rows .svc-row{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 26px;display:flex;align-items:baseline;gap:14px}
-.svc-list{margin-top:30px;border-top:1px solid var(--line)}
-.svc-list .svc-line{display:flex;align-items:baseline;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
-.snum{font-family:'Epilogue',sans-serif;font-size:13px;color:var(--acc);font-weight:600;letter-spacing:.08em}
-.svcs .svc h3,.svc-rows .svc-row h3,.svc-list .svc-line h3{font-family:'Epilogue',sans-serif;font-weight:600;font-size:19px;margin-top:10px;letter-spacing:-.01em}
+/* nav */
+nav{padding:22px 0;background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;backdrop-filter:blur(8px)}
+nav .row{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Quicksand',sans-serif;font-weight:700;font-size:26px;color:var(--ink);letter-spacing:-.5px}
+.brand .dot{display:inline-block;width:10px;height:10px;background:var(--pink-dk);border-radius:50%;margin:0 4px;vertical-align:middle}
+.nlinks{display:flex;gap:30px;font-size:14px;font-weight:600;letter-spacing:.5px}
+.nlinks a{color:var(--mute);text-decoration:none}
+.nlinks a:hover{color:var(--pink-dk)}
+.cta{background:var(--pink-dk);color:#fff;padding:11px 22px;border-radius:999px;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.5px}
 
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
-.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
-.q p{font-family:'Epilogue',sans-serif;font-size:18px;line-height:1.5;margin-bottom:12px}
-.q .who{font-size:13px;font-weight:600;color:var(--acc)}
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px}
-.visit .info{padding:30px 32px;background:var(--surface)}
-.hrow{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.hrow:last-child{border-bottom:0}.hd{font-weight:600}.ht{color:var(--mut)}
-.visit iframe{width:100%;height:100%;min-height:360px;border:0}
-.contact-line{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-footer{background:var(--ink);color:var(--bg);padding:32px 0 46px;border-top:1px solid var(--line)}
-footer .fbrand{font-family:'Epilogue',sans-serif;font-weight:700;font-size:18px}
-footer .credit{margin-top:10px;font-size:13px;opacity:.82}footer a{color:var(--acc)}
-@media(max-width:800px){.hero .grid{grid-template-columns:1fr}.hero-img{order:0;aspect-ratio:16/10}.svcs{grid-template-columns:1fr 1fr}.svc-rows{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.quotes,.visit{grid-template-columns:1fr}nav{display:none}.visit iframe{min-height:280px}}
-</style></head><body>
-<header><div class="wrap row">
-  <div class="brand">Angie&#x27;s Dessert Supplies</div>
-  <div style="display:flex;align-items:center"><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav><a class="callbtn" href="tel:+13107518230">Call (310) 751-8230</a></div>
+/* hero — calm catalog */
+.hero{padding:80px 0 90px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:480px;height:480px;background:var(--pink);border-radius:50%;top:-100px;right:-100px;opacity:.3;z-index:0;filter:blur(2px)}
+.hero::after{content:"";position:absolute;width:300px;height:300px;background:var(--blue);border-radius:50%;bottom:-80px;left:-80px;opacity:.35;z-index:0;filter:blur(2px)}
+.hero .row{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;position:relative;z-index:1}
+.label{display:inline-block;background:#fff;color:var(--pink-dk);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--pink)}
+.hero h1{font-family:'Quicksand',sans-serif;font-weight:700;font-size:clamp(54px,8vw,108px);line-height:.95;letter-spacing:-2.5px;margin-top:18px}
+.hero h1 span{position:relative;display:inline-block}
+.hero h1 span.und::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:14px;background:var(--blue);z-index:-1;opacity:.7}
+.hero h1 span.und2::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:14px;background:var(--mint);z-index:-1;opacity:.7}
+.hero .lede{margin-top:22px;font-size:18px;color:var(--mute);max-width:480px;line-height:1.65}
+.hero .stats{display:flex;gap:24px;margin-top:36px;flex-wrap:wrap}
+.stat{background:#fff;padding:18px 22px;border-radius:18px;box-shadow:0 6px 20px rgba(217,122,146,.1)}
+.stat b{display:block;font-family:'Quicksand',sans-serif;font-weight:700;font-size:30px;color:var(--pink-dk);letter-spacing:-.5px}
+.stat span{font-size:12px;color:var(--mute);letter-spacing:1px;text-transform:uppercase;font-weight:600}
+.hero-photo{aspect-ratio:4/5;background:#999 center/cover no-repeat;border-radius:28px;box-shadow:0 30px 80px rgba(217,122,146,.2)}
+
+/* category grid — pastel chips */
+.cats{padding:90px 0;background:#fff}
+.cats h2{font-family:'Quicksand',sans-serif;font-weight:700;font-size:54px;text-align:center;letter-spacing:-1.5px;color:var(--ink)}
+.cats .sub{text-align:center;font-size:16px;color:var(--mute);margin-top:10px;max-width:520px;margin-left:auto;margin-right:auto}
+.catgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:60px}
+.cat{padding:36px 26px;border-radius:24px;text-align:center;transition:transform .2s;background:var(--bg);border:2px solid transparent}
+.cat:hover{transform:translateY(-4px);border-color:var(--pink)}
+.cat .icon{width:64px;height:64px;border-radius:50%;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-family:'Quicksand',sans-serif;font-weight:700;font-size:30px;color:#fff}
+.cat:nth-child(1) .icon{background:var(--pink-dk)}
+.cat:nth-child(2) .icon{background:var(--blue);color:#1a4358}
+.cat:nth-child(3) .icon{background:var(--mint);color:#1a4d3a}
+.cat:nth-child(4) .icon{background:var(--ink)}
+.cat:nth-child(5) .icon{background:var(--mint);color:#1a4d3a}
+.cat:nth-child(6) .icon{background:var(--pink-dk)}
+.cat:nth-child(7) .icon{background:var(--blue);color:#1a4358}
+.cat:nth-child(8) .icon{background:var(--ink)}
+.cat h3{font-family:'Quicksand',sans-serif;font-weight:700;font-size:20px;color:var(--ink);letter-spacing:-.3px}
+.cat p{margin-top:8px;font-size:13px;color:var(--mute);line-height:1.55}
+
+/* highlight — jelly molds */
+.highlight{padding:90px 0;background:var(--bg)}
+.highlight .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.highlight .lbl{display:inline-block;background:var(--mint);color:#1a4d3a;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px}
+.highlight h2{font-family:'Quicksand',sans-serif;font-weight:700;font-size:56px;letter-spacing:-1.5px;line-height:1}
+.highlight p{margin-top:22px;font-size:17px;color:#4a4258;line-height:1.7}
+.highlight p + p{margin-top:14px}
+.highlight .quote{margin-top:30px;padding:22px 26px;background:#fff;border-left:4px solid var(--pink-dk);border-radius:0 14px 14px 0;font-style:italic;color:var(--ink);font-family:'Quicksand',sans-serif;font-weight:500}
+.highlight .quote b{display:block;font-family:'Manrope',sans-serif;font-style:normal;font-size:12px;letter-spacing:2px;color:var(--pink-dk);text-transform:uppercase;margin-top:10px;font-weight:700}
+.highlight .photo{aspect-ratio:1/1;background:#999 center/cover no-repeat;border-radius:24px;box-shadow:0 30px 80px rgba(217,122,146,.2)}
+
+/* edible printing — flagship feature */
+.flagship{padding:90px 0;background:linear-gradient(135deg, #fff 0%, var(--pink) 100%);text-align:center}
+.flagship .label{background:#fff;color:var(--pink-dk);margin-bottom:18px}
+.flagship h2{font-family:'Quicksand',sans-serif;font-weight:700;font-size:64px;letter-spacing:-1.5px;color:var(--ink)}
+.flagship .sub{font-size:18px;color:#3d3349;margin-top:14px;max-width:540px;margin-left:auto;margin-right:auto;line-height:1.65}
+.flagship .stat-row{display:flex;justify-content:center;gap:50px;margin-top:50px;flex-wrap:wrap}
+.flagship .s b{display:block;font-family:'Quicksand',sans-serif;font-weight:700;font-size:54px;color:var(--pink-dk);letter-spacing:-1px}
+.flagship .s span{font-size:12px;color:var(--mute);letter-spacing:2px;text-transform:uppercase;font-weight:700}
+
+/* praise — speech bubbles */
+.praise{padding:100px 0}
+.praise .center{text-align:center;margin-bottom:50px}
+.praise .label{background:var(--blue);color:#1a4358}
+.praise h2{font-family:'Quicksand',sans-serif;font-weight:700;font-size:54px;letter-spacing:-1.5px;margin-top:14px}
+.prgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pcard{background:#fff;border-radius:24px;padding:30px 26px;position:relative;box-shadow:0 6px 20px rgba(217,122,146,.08);border:1px solid var(--line)}
+.pcard::after{content:"";position:absolute;bottom:-12px;left:36px;width:24px;height:24px;background:#fff;transform:rotate(45deg);box-shadow:6px 6px 12px rgba(217,122,146,.05);border:1px solid var(--line);border-top:none;border-left:none}
+.pcard .star{color:var(--pink-dk);letter-spacing:3px;font-size:14px}
+.pcard .t{margin-top:12px;font-size:15px;color:#3d3349;line-height:1.65}
+.pcard .who{margin-top:18px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--mute);font-weight:700}
+.pcard .who b{color:var(--pink-dk)}
+
+/* visit */
+.visit{padding:100px 0;background:#fff}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.visit .label{background:var(--mint);color:#1a4d3a}
+.visit h2{font-family:'Quicksand',sans-serif;font-weight:700;font-size:54px;letter-spacing:-1.5px;margin-top:14px}
+.visit p.lede{margin-top:16px;font-size:17px;color:var(--mute);max-width:440px}
+.vbox{margin-top:30px;padding:30px;background:var(--bg);border-radius:22px}
+.vrow{display:grid;grid-template-columns:130px 1fr;gap:18px;padding:14px 0;border-bottom:1px dashed var(--line);align-items:start}
+.vrow:last-child{border-bottom:none}
+.vrow b{font-size:11px;letter-spacing:2px;color:var(--pink-dk);text-transform:uppercase;font-weight:700;align-self:center}
+.vrow a{color:var(--pink-dk);text-decoration:none;font-weight:700}
+.hourwheel{background:var(--pink);border-radius:50%;width:100%;max-width:420px;aspect-ratio:1/1;margin:0 auto;padding:50px;display:flex;flex-direction:column;justify-content:center}
+.hourwheel h3{font-family:'Quicksand',sans-serif;font-weight:700;font-size:30px;color:#fff;text-align:center;margin-bottom:18px}
+.hourwheel .hr{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dotted rgba(255,255,255,.4);font-size:13px;color:#fff}
+.hourwheel .hr:last-child{border-bottom:none}
+.hourwheel .hr b{color:#fff;font-weight:700}
+
+/* footer */
+footer{padding:60px 0 40px;text-align:center;background:var(--ink);color:var(--bg)}
+footer .b{font-family:'Quicksand',sans-serif;font-weight:700;font-size:34px;color:#fff}
+footer .b .dot{display:inline-block;width:10px;height:10px;background:var(--pink);border-radius:50%;margin:0 4px;vertical-align:middle}
+footer .det{margin-top:14px;font-size:14px;color:#bdb1cf}
+footer .det a{color:var(--pink)}
+footer .credit{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:12px;color:#928599}
+footer .credit a{color:var(--pink)}
+
+@media (max-width:880px){
+  .hero .row,.highlight .grid,.visit .grid{grid-template-columns:1fr;gap:40px}
+  .catgrid{grid-template-columns:1fr 1fr}
+  .prgrid{grid-template-columns:1fr}
+  .nlinks{display:none}
+  .hero h1{font-size:50px}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap row">
+  <div class="brand">Angie's<span class="dot"></span>Dessert<span class="dot"></span>Supplies</div>
+  <div class="nlinks">
+    <a href="#shop">Shop</a>
+    <a href="#edible">Edible Printing</a>
+    <a href="#visit">Visit</a>
+  </div>
+  <a class="cta" href="tel:+13107518230">(310) 751-8230</a>
+</div></nav>
+
+<header class="hero"><div class="wrap row">
+  <div>
+    <div class="label">Cake & Dessert Supplies · Inglewood</div>
+    <h1>Everything <span class="und">your bake</span><br>could <span class="und2">possibly need</span>.</h1>
+    <p class="lede">Lennox Boulevard's quiet little cake-supply secret — jelly molds floor-to-ceiling, edible printing in under an hour, cake boards, fondant, decorations, and the kind of variety you don't find at the big-box stores.</p>
+    <div class="stats">
+      <div class="stat"><b>1 hr</b><span>Edible Print</span></div>
+      <div class="stat"><b>F-to-C</b><span>Jelly Mold Wall</span></div>
+      <div class="stat"><b>Local</b><span>Small Business</span></div>
+    </div>
+  </div>
+  <div class="hero-photo" style="background-image:url('https://lh3.googleusercontent.com/places/ANXAkqGcNlqKexgQnluPAG55-mKMwtXkunLG64kA8c3RVkxOSQY9XmkAbWw=s1100')"></div>
 </div></header>
 
-<section class="hero"><div class="wrap"><div class="grid">
-  <div>
-    <span class="kicker">Made fresh, made local</span>
-    <h1 class="disp">Out of the oven,<br>onto your plate.</h1>
-    <p class="lede">A neighborhood store that's earned its regulars the honest way — by being good at what it does. Here's everything you need to find us, reach us, and stop by.</p>
-    <div class="cta"><a class="btn solid" href="tel:+13107518230">Call (310) 751-8230</a><a class="btn" href="#visit">Hours &amp; location</a></div>
+<section class="cats" id="shop"><div class="wrap">
+  <h2>What we stock.</h2>
+  <p class="sub">A working supply shop for cake makers, party planners, and home bakers who don't want to drive to Pasadena.</p>
+  <div class="catgrid">
+    <div class="cat"><div class="icon">🍰</div><h3>Cake Boards</h3><p>Round, square, drum — every size you'll need.</p></div>
+    <div class="cat"><div class="icon">◯</div><h3>Jelly Molds</h3><p>The famous floor-to-ceiling wall. Pick a shape.</p></div>
+    <div class="cat"><div class="icon">✦</div><h3>Fondant & Gum Paste</h3><p>Pre-colored or plain. Sheets and tubs in stock.</p></div>
+    <div class="cat"><div class="icon">🖨</div><h3>Edible Printing</h3><p>Photo or design — printed within the hour.</p></div>
+    <div class="cat"><div class="icon">♥</div><h3>Toppers</h3><p>Themes for birthdays, baby showers, quinces.</p></div>
+    <div class="cat"><div class="icon">★</div><h3>Sprinkles & Dust</h3><p>Edible gold, luster dust, jimmies, nonpareils.</p></div>
+    <div class="cat"><div class="icon">○</div><h3>Boxes & Packaging</h3><p>Cake boxes, treat bags, ribbon, tape.</p></div>
+    <div class="cat"><div class="icon">⊙</div><h3>Tools</h3><p>Spatulas, scrapers, piping tips, turntables.</p></div>
   </div>
-  <img class="hero-img" src="https://lh3.googleusercontent.com/places/ANXAkqGcNlqKexgQnluPAG55-mKMwtXkunLG64kA8c3RVkxOSQY9XmkAbWwioNevLd-q04D675_Y73Ye6wA0mO3QAnnKfwZ-aOVz1VA=s4800-w1284" alt="Angie&#x27;s Dessert Supplies">
-</div></div></section>
-
-<section class="section" id="services"><div class="wrap">
-  <div class="kick">Made fresh, made local</div>
-  <h2>What we do.</h2>
-  <div class="svcs"><div class="svc"><span class="snum">01</span><h3>Fresh-baked daily</h3></div><div class="svc"><span class="snum">02</span><h3>Custom orders &amp; cakes</h3></div><div class="svc"><span class="snum">03</span><h3>Sweet &amp; savory</h3></div><div class="svc"><span class="snum">04</span><h3>Coffee &amp; treats</h3></div></div>
 </div></section>
 
-<section class="section gal-sec"><div class="wrap"><div class="kick">A look inside</div><h2>The place itself.</h2><div class="gallery"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPQkOcViT0xYKijlMvRNc4NMtoswooZyuFBr8D_jFA5lNLmbxn226-2BJld82Wp2_AHy4-fDIZdDMOiTJlIT8zJoddSg33sKRkFCZ_TKWC5T-AnM4-1R5jLCuMtK75uQMVkyR_k8bVy5V0iUA=s4800-w1600" alt="Angie&#x27;s Dessert Supplies" loading="lazy"><img src="https://lh3.googleusercontent.com/places/ANXAkqEJ-2a5PhtLXmn5TW1a5AT1jvltFouKEnG0h6c-JlXIrTbkipBtojKBA3jaQ43JjVR1xZ0xaSwhzWH-fNx-YFQhLgiAurZFrk8=s4800-w1600" alt="Angie&#x27;s Dessert Supplies" loading="lazy"><img src="https://lh3.googleusercontent.com/places/ANXAkqG09UBJdctrwEFFd7LuExwhTER_7DOPOcZguC05gDqBhkMFGWuQrKd1Zd4zDsPenog-A5FNzx5ETp07hLtCHYhPGnn5toB36xE=s4800-w1283" alt="Angie&#x27;s Dessert Supplies" loading="lazy"><img src="https://lh3.googleusercontent.com/places/ANXAkqEQfsfh8E2HEfoeIQBIocm9_eGc_uF_XDDGctQt0taRG_6i3U4GwTLhj9O71_tAPJwV5JIoKkrNIUav_emj4At53oF5aKIvqVo=s4800-w1284" alt="Angie&#x27;s Dessert Supplies" loading="lazy"><img src="https://lh3.googleusercontent.com/places/ANXAkqFNX3I0VNX7Dg46SW1RVbZIlgoRrnrdhhGDQOMm_2iGYiA2pTY79xUtPDjsUKjhrqXqhD8AC5a7kPHCUvH7ZVv9S781QxrPn-U=s4800-w1600" alt="Angie&#x27;s Dessert Supplies" loading="lazy"></div></div></section>
-<section class="section"><div class="wrap"><div class="kick">In their words</div><h2>What people say.</h2><div class="quotes"><div class="q"><p>Such a life saver when it comes to edible printing. Had it ready within an hour. Thank you very much!!!!</p><div class="who">— Enn</div></div><div class="q"><p>Out of this world!!! the jelly molds take up an entire room floor to ceiling—prepare to be overwhelmed by the incredible amount of variety Angie’s offers. Also amazing for cake boards and other fun supplies. A bakers dream! I…</p><div class="who">— Anne R.</div></div><div class="q"><p>Small place but people is nice you find everything you need here for a afortable price.</p><div class="who">— Arely G.</div></div></div></div></section>
-
-<section class="section" id="visit"><div class="wrap">
-  <div class="kick">Find us</div>
-  <h2>Visit Angie&#x27;s.</h2>
-  <div class="visit">
-    <div class="info">
-      <div class="contact-line"><a class="btn solid" href="tel:+13107518230">Call (310) 751-8230</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=4443+Lennox+Blvd,+Inglewood,+CA+90304,+USA" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="hrow"><span class="hd">Address</span><span class="ht">4443 Lennox Blvd, Inglewood, CA 90304, USA</span></div>
-      <div class="hrow"><span class="hd">Phone</span><span class="ht"><a href="tel:+13107518230">(310) 751-8230</a></span></div>
-      <div class="hrow"><span class="hd">Monday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Tuesday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Wednesday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Thursday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Friday</span><span class="ht">9:00 AM – 7:00 PM</span></div><div class="hrow"><span class="hd">Saturday</span><span class="ht">9:00 AM – 4:00 PM</span></div><div class="hrow"><span class="hd">Sunday</span><span class="ht">Closed</span></div>
+<section class="highlight"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="lbl">The Jelly Mold Wall</div>
+      <h2>Floor to ceiling.<br>One whole room.</h2>
+      <p>Walk in expecting a shelf — find an entire room. Angie's jelly molds are stacked floor to ceiling, every shape from classic Bundt to themed character molds, in volumes you genuinely won't see anywhere else in LA.</p>
+      <p>It's the kind of thing you have to see to believe. Plan to spend a little longer than you'd expected.</p>
+      <div class="quote">
+        "Out of this world! The jelly molds take up an entire room floor to ceiling — prepare to be overwhelmed by the incredible amount of variety Angie's offers. Also amazing for cake boards and other fun supplies."
+        <b>— Anne R. · Google review</b>
+      </div>
     </div>
-    <iframe loading="lazy" src="https://www.google.com/maps?q=4443+Lennox+Blvd,+Inglewood,+CA+90304,+USA&output=embed" title="Map to Angie&#x27;s Dessert Supplies"></iframe>
+    <div class="photo" style="background-image:url('https://lh3.googleusercontent.com/places/ANXAkqEJ-2a5PhtLXmn5TW1a5AT1jvltFouKEnG0h6c-JlXIrTbkipBtojK=s1000')"></div>
   </div>
 </div></section>
 
-<footer><div class="wrap">
-  <div class="fbrand">Angie&#x27;s Dessert Supplies</div>
-  <div style="font-size:13px;opacity:.7;margin-top:4px">4443 Lennox Blvd, Inglewood, CA 90304, USA</div>
+<section class="flagship" id="edible"><div class="wrap">
+  <div class="label">Edible Printing — Done While You Wait</div>
+  <h2>Bring the photo.<br>Walk out with the print.</h2>
+  <p class="sub">Birthday cake topper? Logo? Custom design? Bring it on a phone or USB and we'll print it onto edible icing sheets — usually within the hour.</p>
+  <div class="stat-row">
+    <div class="s"><b>≤ 1 hr</b><span>Turnaround</span></div>
+    <div class="s"><b>A4</b><span>Standard Sheet</span></div>
+    <div class="s"><b>Walk-In</b><span>No Appointment</span></div>
+  </div>
+</div></section>
+
+<section class="praise"><div class="wrap">
+  <div class="center">
+    <div class="label">Words from Bakers</div>
+    <h2>What our customers say.</h2>
+  </div>
+  <div class="prgrid">
+    <div class="pcard">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <div class="t">"Such a life saver when it comes to edible printing. Had it ready within an hour. Thank you very much!"</div>
+      <div class="who"><b>Enn</b> · Google</div>
+    </div>
+    <div class="pcard">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <div class="t">"Out of this world! The jelly molds take up an entire room floor to ceiling — prepare to be overwhelmed by the incredible amount of variety Angie's offers."</div>
+      <div class="who"><b>Anne R.</b> · Google</div>
+    </div>
+    <div class="pcard">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <div class="t">"Small place but the people are nice, you find everything you need here, and at an affordable price."</div>
+      <div class="who"><b>Arely G.</b> · Google</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="label">Visit the Shop</div>
+      <h2>On Lennox Boulevard.</h2>
+      <p class="lede">A small storefront with more inventory than you'd think from the door. Closed Sundays — we use them to restock.</p>
+      <div class="vbox">
+        <div class="vrow"><b>Where</b><div>4443 Lennox Blvd<br>Inglewood, CA 90304</div></div>
+        <div class="vrow"><b>Call</b><a href="tel:+13107518230">(310) 751-8230</a></div>
+        <div class="vrow"><b>Heads-Up</b><div>Closed Sundays · Limited Saturday hours</div></div>
+      </div>
+    </div>
+    <div class="hourwheel">
+      <h3>Hours</h3>
+      <div class="hr"><b>Mon</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Tue</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Wed</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Thu</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Fri</b><span>9 AM – 7 PM</span></div>
+      <div class="hr"><b>Sat</b><span>9 AM – 4 PM</span></div>
+      <div class="hr"><b>Sun</b><span>Closed</span></div>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="b">Angie's<span class="dot"></span>Dessert<span class="dot"></span>Supplies</div>
+  <div class="det">4443 Lennox Blvd · Inglewood · <a href="tel:+13107518230">(310) 751-8230</a></div>
   <div class="credit">Mockup designed by LJ Sites — interested in making this yours? <a href="mailto:LJsites.llc@gmail.com">LJsites.llc@gmail.com</a></div>
-</div></footer>
+</footer>
+
 </body></html>
